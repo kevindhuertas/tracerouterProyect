@@ -1,59 +1,93 @@
 import React from "react";
 import TracerouteTestCard from "../../modules/TracerouteTestcard";
-
-const htmlTracesBaseUrl = "../../data/Route_to_35.234.37.87.html"
+import { GroupNames } from "../../data/integrantes";
+import { servidores } from "../../data/servidores";
+import { PacketSize, codigosArchivos } from "../../data/codigos";
+import CodeBlocks from "../../modules/codeBlocks";
 
 export default function DashboardContainer() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       {/* Sección del encabezado */}
 
-      <header className=" ">
-        <div className="container mx-auto grid grid-cols-2 p-4">
-          {/* Columna izquierda */}
-          <div className="flex items-center">
-            <h1 className=" font-bold text-3xl">Nombre del Proyecto</h1>
-          </div>
+      <div className="grid grid-cols-2 p-4">
+        {/* Columna izquierda */}
+        <div className="flex items-center">
+          <h1 className=" font-bold text-3xl">
+            {" "}
+            Análisis de latencia y ancho de banda de red utilizando servidores
+            de AWS y Azure.{" "}
+          </h1>
+        </div>
 
-          {/* Columna derecha */}
-          <div className="flex items-center justify-end">
-            <div className="text-right">
-              <p className="text-gray-500 text-lg font-medium mb-1">
-                Integrante 1
+        {/* Columna derecha */}
+        <div className="flex items-center justify-end">
+          <div className="text-right">
+            {GroupNames.map((nombre, i) => (
+              <p key={i} className="text-gray-500 text-lg font-medium mb-1">
+                {nombre}
               </p>
-              <p className="text-gray-500 text-lg font-medium mb-1">
-                Integrante 2
-              </p>
-              <p className="text-gray-500 text-lg font-medium mb-1">
-                Integrante 3
-              </p>
-              <p className="text-gray-500 text-lg font-medium mb-1">
-                Integrante 4
-              </p>
-              <p className="text-gray-500 text-lg font-medium mb-1">
-                Integrante 5
-              </p>
-            </div>
+            ))}
           </div>
         </div>
-      </header>
+      </div>
 
       {/* Sección del contenido */}
-      <main className="container mx-auto p-8">
+      <div className="flex flex-col p-8">
         {/* <h2 className="text-3xl font-bold mb-8">Bienvenido al proyecto</h2> */}
         <p className="text-lg">
-          Texto del proyecto Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Itaque earum animi incidunt ipsa corporis repellat porro, hic
-          veniam velit voluptatum. Illo vero exercitationem dignissimos iste,
-          modi sapiente labore totam quisquam?
+          Nuestro proyecto consiste en configurar múltiples servidores en AWS y
+          Azure para alojar objetos de diferentes tamaños. El proyecto tiene
+          como objetivo recopilar información sobre latencias, traceroutes
+          (usando TCP ping y curl) para calcular el bandwidth y la latencia de
+          varios enlaces entre nodos.
         </p>
-      </main>
-      <div className="">
-        <TracerouteTestCard
-          htmlTrace="./src/data/Route_to_35.234.37.87.html"
-          IpTitle="Ruta a 35.234.37.87"
-          description="Servidor en Japón"
-        />
+      </div>
+      <div className="flex flex-col gap-4 py-4">
+        {servidores.map((servidor, i) => (
+          <TracerouteTestCard
+            key={i}
+            htmlTrace={servidor.htmlName}
+            IpTitle={"Ruta a " + servidor.ip}
+            description={servidor.description}
+            bandwidthImg={servidor.bandwidthImg}
+          />
+        ))}
+      </div>
+      <div className="py-4">
+        <h2 className=" font-bold text-3xl">Códigos </h2>
+        {codigosArchivos.map((code, i) => (
+          <CodeBlocks
+            codigoSrc={code.codigoSrc}
+            titulo={code.titulo}
+            description={code.description}
+            colabUrl={code.colabUrl}
+            img={code.img}
+            key={i}
+          ></CodeBlocks>
+        ))}
+      </div>
+
+      <div className="py-4 grid grid-cols-1 lg:grid-cols-2">
+        <div className="col-span-2">
+          <CodeBlocks
+            codigoSrc={PacketSize[0].codigoSrc}
+            titulo={PacketSize[0].titulo}
+            description={PacketSize[0].description}
+            colabUrl={PacketSize[0].colabUrl}
+            img={PacketSize[0].img}
+          ></CodeBlocks>
+        </div>
+        {PacketSize.slice(1).map((code, i) => (
+          <CodeBlocks
+            codigoSrc={code.codigoSrc}
+            titulo={code.titulo}
+            description={code.description}
+            colabUrl={code.colabUrl}
+            img={code.img}
+            key={i}
+          ></CodeBlocks>
+        ))}
       </div>
     </div>
   );

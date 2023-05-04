@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc = L.map(
+                "map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc",
+                {
+                    center: [-0.2309, -78.5211],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_54bd4719985ae55cab50ccdc9c8e6fc3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var marker_914905a8300c86eb2c77381ef04747bf = L.marker(
+                [-0.2309, -78.5211],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_abe460f94fe52c57ba423ae750cd4ac5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05d98671e11186890f66c528938be755 = $(`<div id="html_05d98671e11186890f66c528938be755" style="width: 100.0%; height: 100.0%;">Ecuador</div>`)[0];
+                popup_abe460f94fe52c57ba423ae750cd4ac5.setContent(html_05d98671e11186890f66c528938be755);
+            
+        
+
+        marker_914905a8300c86eb2c77381ef04747bf.bindPopup(popup_abe460f94fe52c57ba423ae750cd4ac5)
+        ;
+
+        
+    
+    
+            var marker_ff064d671adbb87d99297e028011283e = L.marker(
+                [37.751, -97.822],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_ab4a13b196cd436cd040553ef4092bac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a80e11ac94c22b5c69edb3f7e96d5f42 = $(`<div id="html_a80e11ac94c22b5c69edb3f7e96d5f42" style="width: 100.0%; height: 100.0%;">United States</div>`)[0];
+                popup_ab4a13b196cd436cd040553ef4092bac.setContent(html_a80e11ac94c22b5c69edb3f7e96d5f42);
+            
+        
+
+        marker_ff064d671adbb87d99297e028011283e.bindPopup(popup_ab4a13b196cd436cd040553ef4092bac)
+        ;
+
+        
+    
+    
+            var marker_b93874abd5f599e12ca16b3c731833df = L.marker(
+                [25.0504, 121.5324],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_59ea183db9609e945cd5626ee05abbd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d829b3425579565b1b116ff31b0cd49f = $(`<div id="html_d829b3425579565b1b116ff31b0cd49f" style="width: 100.0%; height: 100.0%;">Taiwan</div>`)[0];
+                popup_59ea183db9609e945cd5626ee05abbd5.setContent(html_d829b3425579565b1b116ff31b0cd49f);
+            
+        
+
+        marker_b93874abd5f599e12ca16b3c731833df.bindPopup(popup_59ea183db9609e945cd5626ee05abbd5)
+        ;
+
+        
+    
+    
+            var marker_04ff6f0306c3e229f33dc4487b72e176 = L.marker(
+                [-0.2309, -78.5211],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_2d8cf1dcbfc68008335602d7aa4a80cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6354d457edf4d6fed0b01941fef16436 = $(`<div id="html_6354d457edf4d6fed0b01941fef16436" style="width: 100.0%; height: 100.0%;">Ecuador</div>`)[0];
+                popup_2d8cf1dcbfc68008335602d7aa4a80cb.setContent(html_6354d457edf4d6fed0b01941fef16436);
+            
+        
+
+        marker_04ff6f0306c3e229f33dc4487b72e176.bindPopup(popup_2d8cf1dcbfc68008335602d7aa4a80cb)
+        ;
+
+        
+    
+    
+            var marker_f7ea7b9f8980d54a62ab12bd3821bee1 = L.marker(
+                [37.751, -97.822],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_3b2ffdf296ee590bf3b39fdb21af9317 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2de36ca0fb820d017e874bc1313fd1d = $(`<div id="html_f2de36ca0fb820d017e874bc1313fd1d" style="width: 100.0%; height: 100.0%;">United States</div>`)[0];
+                popup_3b2ffdf296ee590bf3b39fdb21af9317.setContent(html_f2de36ca0fb820d017e874bc1313fd1d);
+            
+        
+
+        marker_f7ea7b9f8980d54a62ab12bd3821bee1.bindPopup(popup_3b2ffdf296ee590bf3b39fdb21af9317)
+        ;
+
+        
+    
+    
+            var marker_40cb7646309c85b1e30ce89da6ce5e91 = L.marker(
+                [25.0504, 121.5324],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_7390cf6d8f928f1f69f535d1fd27c635 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5aaf270cfdee6a7aae9726c2ce255aad = $(`<div id="html_5aaf270cfdee6a7aae9726c2ce255aad" style="width: 100.0%; height: 100.0%;">Taiwan</div>`)[0];
+                popup_7390cf6d8f928f1f69f535d1fd27c635.setContent(html_5aaf270cfdee6a7aae9726c2ce255aad);
+            
+        
+
+        marker_40cb7646309c85b1e30ce89da6ce5e91.bindPopup(popup_7390cf6d8f928f1f69f535d1fd27c635)
+        ;
+
+        
+    
+    
+            var marker_a9de9726fb788b8857e004cc493c1fb7 = L.marker(
+                [-0.2309, -78.5211],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_0e622cbe4b9116d5c2b6904b9cb4407b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4def98df38a5a5db3c0479c3738e231f = $(`<div id="html_4def98df38a5a5db3c0479c3738e231f" style="width: 100.0%; height: 100.0%;">Ecuador</div>`)[0];
+                popup_0e622cbe4b9116d5c2b6904b9cb4407b.setContent(html_4def98df38a5a5db3c0479c3738e231f);
+            
+        
+
+        marker_a9de9726fb788b8857e004cc493c1fb7.bindPopup(popup_0e622cbe4b9116d5c2b6904b9cb4407b)
+        ;
+
+        
+    
+    
+            var marker_251d4aaf5ba217bc5122ae554eb1d640 = L.marker(
+                [37.751, -97.822],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_fcd1750f4473c1c7fa64c33df252363f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0377c4dfe3e8293379cd5311f375b29d = $(`<div id="html_0377c4dfe3e8293379cd5311f375b29d" style="width: 100.0%; height: 100.0%;">United States</div>`)[0];
+                popup_fcd1750f4473c1c7fa64c33df252363f.setContent(html_0377c4dfe3e8293379cd5311f375b29d);
+            
+        
+
+        marker_251d4aaf5ba217bc5122ae554eb1d640.bindPopup(popup_fcd1750f4473c1c7fa64c33df252363f)
+        ;
+
+        
+    
+    
+            var marker_762e8b73ea3c9d1afc713d15ce64d9cf = L.marker(
+                [25.0504, 121.5324],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_1c7c4a4463c030d0b7765116b0e4bff9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1dd2c1833d635ca1fef44b7e06c42db = $(`<div id="html_e1dd2c1833d635ca1fef44b7e06c42db" style="width: 100.0%; height: 100.0%;">Taiwan</div>`)[0];
+                popup_1c7c4a4463c030d0b7765116b0e4bff9.setContent(html_e1dd2c1833d635ca1fef44b7e06c42db);
+            
+        
+
+        marker_762e8b73ea3c9d1afc713d15ce64d9cf.bindPopup(popup_1c7c4a4463c030d0b7765116b0e4bff9)
+        ;
+
+        
+    
+    
+            var marker_110fbe60f8f676ca40624ad05696c407 = L.marker(
+                [-0.2309, -78.5211],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_9927e6e0cf9e01217112e787fc1aa877 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8e3c114d0affd4174dffcf7d28a2eb7 = $(`<div id="html_d8e3c114d0affd4174dffcf7d28a2eb7" style="width: 100.0%; height: 100.0%;">Ecuador</div>`)[0];
+                popup_9927e6e0cf9e01217112e787fc1aa877.setContent(html_d8e3c114d0affd4174dffcf7d28a2eb7);
+            
+        
+
+        marker_110fbe60f8f676ca40624ad05696c407.bindPopup(popup_9927e6e0cf9e01217112e787fc1aa877)
+        ;
+
+        
+    
+    
+            var marker_f8404d8fd041e3be79966df1aed6ede5 = L.marker(
+                [37.751, -97.822],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_e733a43f8eaad0cd8f14fad3ffa6612d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ecf479cd007ad6dcd48397b9f86d1274 = $(`<div id="html_ecf479cd007ad6dcd48397b9f86d1274" style="width: 100.0%; height: 100.0%;">United States</div>`)[0];
+                popup_e733a43f8eaad0cd8f14fad3ffa6612d.setContent(html_ecf479cd007ad6dcd48397b9f86d1274);
+            
+        
+
+        marker_f8404d8fd041e3be79966df1aed6ede5.bindPopup(popup_e733a43f8eaad0cd8f14fad3ffa6612d)
+        ;
+
+        
+    
+    
+            var marker_1485c02da11b40caa2a155fc0d20de31 = L.marker(
+                [25.0504, 121.5324],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_5b3cddeb5df33ec102381104c275cc85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7175ff3cc110ced0b8944d16d787796f = $(`<div id="html_7175ff3cc110ced0b8944d16d787796f" style="width: 100.0%; height: 100.0%;">Taiwan</div>`)[0];
+                popup_5b3cddeb5df33ec102381104c275cc85.setContent(html_7175ff3cc110ced0b8944d16d787796f);
+            
+        
+
+        marker_1485c02da11b40caa2a155fc0d20de31.bindPopup(popup_5b3cddeb5df33ec102381104c275cc85)
+        ;
+
+        
+    
+    
+            var marker_d2fabbba1ddf8631ae77e352c091288c = L.marker(
+                [-0.2309, -78.5211],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_fbf248ac94586a1a71f0db8fa9d90c82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79a57c884fbe6f52862b30b85201f9ba = $(`<div id="html_79a57c884fbe6f52862b30b85201f9ba" style="width: 100.0%; height: 100.0%;">Ecuador</div>`)[0];
+                popup_fbf248ac94586a1a71f0db8fa9d90c82.setContent(html_79a57c884fbe6f52862b30b85201f9ba);
+            
+        
+
+        marker_d2fabbba1ddf8631ae77e352c091288c.bindPopup(popup_fbf248ac94586a1a71f0db8fa9d90c82)
+        ;
+
+        
+    
+    
+            var marker_b3b692970ab357fd6058998e032f782e = L.marker(
+                [37.751, -97.822],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_949a3fab9ad7dc600aaca917d1688adf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d4d36688d0cfd6c366f43936c5d5da01 = $(`<div id="html_d4d36688d0cfd6c366f43936c5d5da01" style="width: 100.0%; height: 100.0%;">United States</div>`)[0];
+                popup_949a3fab9ad7dc600aaca917d1688adf.setContent(html_d4d36688d0cfd6c366f43936c5d5da01);
+            
+        
+
+        marker_b3b692970ab357fd6058998e032f782e.bindPopup(popup_949a3fab9ad7dc600aaca917d1688adf)
+        ;
+
+        
+    
+    
+            var marker_c16830ecd06f9680abb1463172bed840 = L.marker(
+                [25.0504, 121.5324],
+                {}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+        var popup_22bcfd28c896cb1f792cdf5ffb288abb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe61a53576923c2f545fdc83d712097d = $(`<div id="html_fe61a53576923c2f545fdc83d712097d" style="width: 100.0%; height: 100.0%;">Taiwan</div>`)[0];
+                popup_22bcfd28c896cb1f792cdf5ffb288abb.setContent(html_fe61a53576923c2f545fdc83d712097d);
+            
+        
+
+        marker_c16830ecd06f9680abb1463172bed840.bindPopup(popup_22bcfd28c896cb1f792cdf5ffb288abb)
+        ;
+
+        
+    
+    
+            var poly_line_f3e303a38e233472ce0dc0cb3b77cf6a = L.polyline(
+                [[-0.2309, -78.5211], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_7dc6fc5a2e9e1e75b77891b988bd9d7b = L.polyline(
+                [[37.751, -97.822], [25.0504, 121.5324]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_1d7de3a39af080cb20aa32800092ac1b = L.polyline(
+                [[25.0504, 121.5324], [-0.2309, -78.5211]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_9a082dd94ee86879f892aba6e7a38273 = L.polyline(
+                [[-0.2309, -78.5211], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_fdc7812458b197552d31dfb56956d202 = L.polyline(
+                [[37.751, -97.822], [25.0504, 121.5324]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_43182eb6e241a46bb3dce0e6b93ee2c4 = L.polyline(
+                [[25.0504, 121.5324], [-0.2309, -78.5211]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_d0defe08e208891afba18ab22e99261c = L.polyline(
+                [[-0.2309, -78.5211], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_2309f82f9c778cc44e1670c97cfa7531 = L.polyline(
+                [[37.751, -97.822], [25.0504, 121.5324]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_1a522ebc9382f16391f0c5058748e56a = L.polyline(
+                [[25.0504, 121.5324], [-0.2309, -78.5211]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_3c2cfd7e8085605ad866eef6053c4c9d = L.polyline(
+                [[-0.2309, -78.5211], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_3d69831f10ce854c728893e54e033a69 = L.polyline(
+                [[37.751, -97.822], [25.0504, 121.5324]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_10a0af42418d27180943926a3b55810b = L.polyline(
+                [[25.0504, 121.5324], [-0.2309, -78.5211]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_7f138b9ee395ef5206a7622e33c9ad78 = L.polyline(
+                [[-0.2309, -78.5211], [37.751, -97.822]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+    
+            var poly_line_4ecd52200e384adb9eb930ed76a38776 = L.polyline(
+                [[37.751, -97.822], [25.0504, 121.5324]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e95d4fd4fc6cbc8aeb95e99e5b35ddcc);
+        
+</script>
+</html>

@@ -7,9 +7,9 @@ import { NavBar } from "./NavBar";
 function Layout({ body }) {
   return (
     <BrowserRouter>
-      <div className="relative min-h-screen max-h-screen w-full">
+      <div className="absolute min-h-screen max-h-screen w-full">
         <NavBar></NavBar>
-        <div className="flex flex-col justify-center items-center">
+        <div className="container flex flex-col flex-auto  content-center p-5 lg:px-20  mx-auto ">
           <DashboardContainer />
         </div>
       </div>
