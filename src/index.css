@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .title {
+      @apply text-xl font-bold;
+    }
+    .sub-title {
+      @apply text-lg font-bold;
+    }
+    .box-container-shadow{
+      @apply border border-gray-100 shadow-lg shadow-gray-200/60  !important;
+    }
+  }
