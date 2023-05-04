@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { FaDownload } from "react-icons/fa";
 
 interface propsCode {
   codigoSrc?: string;
@@ -8,6 +9,8 @@ interface propsCode {
   description?: string;
   colabUrl?: string;
   img?: string;
+  fileUrl?: string;
+  fileName?: string;
 }
 
 const customStyle = `
@@ -25,8 +28,17 @@ export default function CodeBlocks({
   description,
   colabUrl,
   img,
+  fileName,
+  fileUrl,
 }: propsCode) {
   const [code, setCode] = useState(undefined!);
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = fileUrl!;
+    link.download = fileName!;
+    link.click();
+  };
 
   useEffect(() => {
     if (codigoSrc) {
@@ -63,8 +75,19 @@ export default function CodeBlocks({
         )}
       </div>
       {img && (
-        <div className="flex flex-1 object-contain ">
-          <img src={img} className="object-contain p-1" />
+        <div className="flex flex-1 object-contain justify-center ">
+          <img src={img} className="object-contain p-1 max-h-96" />
+        </div>
+      )}
+      {fileUrl && (
+        <div className="flex w-full justify-center ">
+          <button
+            className="bg-blue-500 hover:bg-blue-700 text-white flex items-center  py-2 px-4 rounded"
+            onClick={handleDownload}
+          >
+            <FaDownload className="mr-2" />
+            Descargar {fileName}
+          </button>
         </div>
       )}
     </div>

@@ -4,6 +4,8 @@ export const codigosArchivos: {
   description?: string;
   colabUrl?: string;
   img?: string;
+  fileUrl?: string;
+  fileName?: string;
 }[] = [
   {
     codigoSrc: "./traceroute.py",
@@ -13,6 +15,12 @@ export const codigosArchivos: {
     codigoSrc: "./server_ping.py",
     titulo: "Código para conseguir los datos de latencia",
   },
+  {
+    fileUrl: "./hop_bandwidth_analysis.ipynb",
+    titulo: "Análisis del bandwidth en Colab",
+    fileName:"hop_bandwidth_analysis.ipynb"
+  },
+
   {
     codigoSrc: "./bandwidth_curl.py",
     titulo: "Código para obtener el bandwidth con curl",
@@ -32,10 +40,13 @@ export const PacketSize: {
   {
     titulo: "Gráficas del Server, Packet Size",
     colabUrl:
-      "https://colab.research.google.com/drive/1jrefFPwT-dZIdGQXVcZCWM301vKUN3Lo?usp=sharing",
+      "https://colab.research.google.com/drive/1sPDxUUAxTx9kFH3ura0biBsWD-hkkgyS?usp=sharing",
   },
   {
     img: "./ServerAndPacketSize/Chile Server, Packet Size.png",
+  },
+  {
+    img: "./ServerAndPacketSize/United Server.jpeg",
   },
   {
     img: "./ServerAndPacketSize/France Server, Packet Size.png",
@@ -46,7 +57,5 @@ export const PacketSize: {
   {
     img: "./ServerAndPacketSize/Spain Server, Packet Size.png",
   },
-  {
-    img: "./ServerAndPacketSize/Taiwan Server, Packet Size.png",
-  },
+  
 ];
