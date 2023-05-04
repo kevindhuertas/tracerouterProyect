@@ -7,12 +7,12 @@ import { NavBar } from "./NavBar";
 function Layout({ body }) {
   return (
     <BrowserRouter>
-        <div className="relative min-h-screen max-h-screen w-full">
-          <NavBar></NavBar>
-          <Routes history={history}>
-            <Route path="/" exact element={<DashboardContainer />} />
-          </Routes>
+      <div className="relative min-h-screen max-h-screen w-full">
+        <NavBar></NavBar>
+        <div className="flex flex-col justify-center items-center">
+          <DashboardContainer />
         </div>
+      </div>
     </BrowserRouter>
   );
 }

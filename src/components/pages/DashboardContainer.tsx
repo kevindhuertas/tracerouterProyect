@@ -1,24 +1,12 @@
 import React from "react";
-import { logousfqUrl } from "../../assets/logo_usfq_url";
+import TracerouteTestCard from "../../modules/TracerouteTestcard";
+
+const htmlTracesBaseUrl = "../../data/Route_to_35.234.37.87.html"
 
 export default function DashboardContainer() {
   return (
-    <div className="bg-gray-100 flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen">
       {/* Sección del encabezado */}
-      <header className="bg-white border-b-2 border-gray-300 p-4">
-        <div className="container mx-auto flex items-center justify-between">
-          <div className="flex items-center">
-            <img
-              src={logousfqUrl}
-              alt="Logo del proyecto"
-              className="h-12 mr-4"
-            />
-          </div>
-          <div className="flex items-center">
-            <p className="mr-4">Redes - 4005</p>
-          </div>
-        </div>
-      </header>
 
       <header className=" ">
         <div className="container mx-auto grid grid-cols-2 p-4">
@@ -52,7 +40,7 @@ export default function DashboardContainer() {
 
       {/* Sección del contenido */}
       <main className="container mx-auto p-8">
-        <h2 className="text-3xl font-bold mb-8">Bienvenido al proyecto</h2>
+        {/* <h2 className="text-3xl font-bold mb-8">Bienvenido al proyecto</h2> */}
         <p className="text-lg">
           Texto del proyecto Lorem ipsum dolor sit amet consectetur adipisicing
           elit. Itaque earum animi incidunt ipsa corporis repellat porro, hic
@@ -60,6 +48,13 @@ export default function DashboardContainer() {
           modi sapiente labore totam quisquam?
         </p>
       </main>
+      <div className="">
+        <TracerouteTestCard
+          htmlTrace="./src/data/Route_to_35.234.37.87.html"
+          IpTitle="Ruta a 35.234.37.87"
+          description="Servidor en Japón"
+        />
+      </div>
     </div>
   );
 }
